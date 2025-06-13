@@ -843,6 +843,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
     server: {
       host: true,
+      port: 1523,
       fs: {
         // for when developing with locally linked theme
         allow: ['../..']
