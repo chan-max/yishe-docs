@@ -818,7 +818,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       external: ['@vue/repl']
     },
     server: {
-      host: true,
+      host: '0.0.0.0',
       port: 1523,
       fs: {
         // for when developing with locally linked theme
