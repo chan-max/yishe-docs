@@ -616,61 +616,37 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   lang: 'zh-CN',
-  title: 'Vue.js',
-  description: 'Vue.js - 渐进式的 JavaScript 框架',
+  title: '衣设开发平台',
+  description: '衣设开发平台文档中心',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
+  outDir: 'dist',
 
   head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
-    ['meta', { property: 'og:url', content: 'https://vuejs.org/' }],
+    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }],
+    ['meta', { property: 'og:url', content: 'https://cn.vuejs.org/' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'Vue.js' }],
-    [
-      'meta',
-      {
-        property: 'og:description',
-        content: 'Vue.js - 渐进式的 JavaScript 框架'
-      }
-    ],
-    [
-      'meta',
-      {
-        property: 'og:image',
-        content: 'https://vuejs.org/images/logo.png'
-      }
-    ],
+    ['meta', { property: 'og:title', content: '衣设开发平台' }],
+    ['meta', { property: 'og:description', content: '衣设开发平台文档中心' }],
+    ['meta', { property: 'og:image', content: 'https://cn.vuejs.org/images/logo.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@vuejs' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
-    [
-      'link',
-      {
-        rel: 'preconnect',
-        href: 'https://automation.vuejs.org'
-      }
-    ],
+    ['meta', { name: 'twitter:title', content: '衣设开发平台' }],
+    ['meta', { name: 'twitter:description', content: '衣设开发平台文档中心' }],
+    ['meta', { name: 'twitter:image', content: 'https://cn.vuejs.org/images/logo.png' }],
+    ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'XNOLWPLB', 'data-spa': 'auto', defer: '' }],
+    ['script', { src: 'https://vueschool.io/banners/main.js', defer: '' }],
+    ['link', { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#3c8772' }],
     inlineScript('restorePreference.js'),
     inlineScript('uwu.js'),
-    [
-      'script',
-      {
-        src: 'https://cdn.usefathom.com/script.js',
-        'data-site': 'ZPMMDSYA',
-        'data-spa': 'auto',
-        defer: ''
-      }
-    ],
-    [
-      'script',
-      {
-        src: 'https://vueschool.io/banner.js?affiliate=vuejs&type=top',
-        async: 'true'
-      }
-    ],
     inlineScript('perfops.js')
   ],
 
   themeConfig: {
+    logo: '/images/logo.png',
+    siteTitle: '衣设开发平台',
     nav,
     sidebar,
     i18n,

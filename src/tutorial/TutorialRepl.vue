@@ -114,7 +114,7 @@ updateExample()
 <template>
   <section class="tutorial">
     <article class="instruction" ref="instruction">
-      <PreferenceSwitch />
+      <!-- <PreferenceSwitch /> -->
       <VTFlyout :button="`${currentStepIndex} / ${totalSteps}`">
         <VTLink
           v-for="(step, i) of allSteps"
