@@ -649,8 +649,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   ],
 
   themeConfig: {
-    logo: '/images/logo.png',
-    siteTitle: '衣设开发平台',
+    // logo: '/images/logo.png',
+    // siteTitle: '衣设开发平台',
     nav,
     sidebar,
     i18n,
