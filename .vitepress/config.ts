@@ -624,7 +624,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   description: '衣设开发平台文档中心',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
-  outDir: 'dist',
+  // outDir: 'dist',
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
