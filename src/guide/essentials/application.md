@@ -14,7 +14,7 @@ const app = createApp({
 
 ## 挂载应用 {#mounting-the-application}
 
-应用实例必须在调用了 `.mount()` 方法后才会渲染出来。该方法接收一个"容器"参数，可以是一个实际的 DOM 元素或是一个 CSS 选择器字符串：
+应用实例必须在调用了 `.mount()` 方法后才会渲染出来。该方法接收一个「容器」参数，可以是一个实际的 DOM 元素或是一个 CSS 选择器字符串：
 
 ```html
 <div id="app"></div>

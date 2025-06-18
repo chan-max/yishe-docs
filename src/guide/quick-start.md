@@ -12,14 +12,14 @@ import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
 
 ## 注册账号
 
-1. 访问 [衣设官网](https://yishe.com)
-2. 点击右上角的"注册"按钮
+1. 访问[衣设官网](https://yishe.com)
+2. 点击右上角的「注册」按钮
 3. 填写基本信息并验证邮箱
 4. 完成注册后即可登录平台
 
 ## 创建项目
 
-1. 登录后点击"新建项目"
+1. 登录后点击「新建项目」
 2. 选择项目类型（服装设计/面料设计/配饰设计）
 3. 填写项目基本信息
 4. 选择项目模板或从空白开始
@@ -72,9 +72,9 @@ import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
 
 - 想要快速体验 Vue，你可以直接试试我们的[演练场](https://play.vuejs.org/#eNo9jcEKwjAMhl/lt5fpQYfXUQfefAMvvRQbddC1pUuHUPrudg4HIcmXjyRZXEM4zYlEJ+T0iEPgXjn6BB8Zhp46WUZWDjCa9f6w9kAkTtH9CRinV4fmRtZ63H20Ztesqiylphqy3R5UYBqD1UyVAPk+9zkvV1CKbCv9poMLiTEfR2/IXpSoXomqZLtti/IFwVtA9A==)。
 
-- 如果你更喜欢不用任何构建的原始 HTML，可以使用 [JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/) 入门。
+- 如果你更喜欢不用任何构建的原始 HTML，可以使用[JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/)入门。
 
-- 如果你已经比较熟悉 Node.js 和构建工具等概念，还可以直接在浏览器中打开 [StackBlitz](https://vite.new/vue) 来尝试完整的构建设置。
+- 如果你已经比较熟悉 Node.js 和构建工具等概念，还可以直接在浏览器中打开[StackBlitz](https://vite.new/vue)来尝试完整的构建设置。
 
 ## 创建一个 Vue 应用 {#creating-a-vue-application}
 
@@ -84,9 +84,9 @@ import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
 - 已安装 18.3 或更高版本的 [Node.js](https://nodejs.org/)
 :::
 
-在本节中，我们将介绍如何在本地搭建 Vue [单页应用](/guide/extras/ways-of-using-vue#single-page-application-spa)。创建的项目将使用基于 [Vite](https://vitejs.dev) 的构建设置，并允许我们使用 Vue 的[单文件组件](/guide/scaling-up/sfc) (SFC)。
+在本节中，我们将介绍如何在本地搭建 Vue 单页应用（SPA）。创建的项目将使用基于 [Vite](https://vitejs.dev) 的构建设置，并允许我们使用 Vue 的单文件组件（SFC）。
 
-确保你安装了最新版本的 [Node.js](https://nodejs.org/)，并且你的当前工作目录正是打算创建项目的目录。在命令行中运行以下命令 (不要带上 `$` 符号)：
+确保你安装了最新版本的 [Node.js](https://nodejs.org/)，并且你的当前工作目录正是打算创建项目的目录。在命令行中运行以下命令（不要带上 $ 符号）：
 
 <VTCodeGroup>
   <VTCodeGroupTab label="npm">
@@ -237,7 +237,7 @@ import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
 
 这里我们使用了 [unpkg](https://unpkg.com/)，但你也可以使用任何提供 npm 包服务的 CDN，例如 [jsdelivr](https://www.jsdelivr.com/package/npm/vue) 或 [cdnjs](https://cdnjs.com/libraries/vue)。当然，你也可以下载此文件并自行提供服务。
 
-通过 CDN 使用 Vue 时，不涉及"构建步骤"。这使得设置更加简单，并且可以用于增强静态的 HTML 或与后端框架集成。但是，你将无法使用单文件组件 (SFC) 语法。
+通过 CDN 使用 Vue 时，不涉及「构建步骤」。这使得设置更加简单，并且可以用于增强静态页面。但是，你将无法使用单文件组件 (SFC) 语法。
 
 ### 使用全局构建版本 {#using-the-global-build}
 
