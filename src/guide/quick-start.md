@@ -61,15 +61,12 @@ import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
 ## 获取帮助
 
 - 查看[详细教程](/tutorial/)
-- 访问[帮助中心](/guide/help)
 - 联系客服支持
 - 加入用户社区
 
 ## 下一步
 
-- 探索[高级功能](/guide/advanced)
-- 了解[最佳实践](/guide/best-practices)
-- 查看[常见问题](/guide/faq)
+- 了解[性能优化](/guide/best-practices/performance)
 
 ## 线上尝试 Vue {#try-vue-online}
 
@@ -498,7 +495,7 @@ export default {
 如果你尚未阅读[简介](/guide/introduction)，我们强烈推荐你在移步到后续文档之前返回去阅读一下。
 
 <div class="vt-box-container next-steps">
-  <a class="vt-box" href="/guide/essentials/application.html">
+  <a class="vt-box" href="/guide/essentials/application">
     <p class="next-steps-link">继续阅读该指南</p>
     <p class="next-steps-caption">该指南会带你深入了解框架所有方面的细节。</p>
   </a>

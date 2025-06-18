@@ -19,7 +19,7 @@ Vue Router 也有类似的功能，用于[路由懒加载](https://router.vuejs.
 
 Vue 的[单文件组件](#single-file-component)编译器支持各种宏，例如 `defineProps()`、`defineEmits()` 和 `defineExpose()`。这些宏有意设计得像是普通的 JavaScript 函数，以便它们可以利用 JavaScript / TypeScript 中的相同解析器和类型推断工具。然而，它们不是在浏览器中运行的实际函数。这些特殊字符串会被编译器检测到并替换为实际真正运行的 JavaScript 代码。
 
-宏在使用上有一些不适用于普通 JavaScript 代码的限制。例如，你可能认为 `const dp = defineProps` 会为 `defineProps` 创建一个别名，但实际上它会导致错误。相同的限制也存在于传入 `defineProps()` 的值，因为“参数”必须由编译器处理，而不是在运行时。
+宏在使用上有一些不适用于普通 JavaScript 代码的限制。例如，你可能认为 `const dp = defineProps` 会为 `defineProps` 创建一个别名，但实际上它会导致错误。相同的限制也存在于传入 `defineProps()` 的值，因为"参数"必须由编译器处理，而不是在运行时。
 
 详见：
 - [`<script setup>` - `defineProps()` & `defineEmits()`](/api/sfc-script-setup.html#defineprops-defineemits)
@@ -52,7 +52,7 @@ const HelloWorldComponent = {
 详见：
 - [指南 - 组件基础](/guide/essentials/component-basics.html)
 
-“组件”一词还出现在其他几个术语中：
+"组件"一词还出现在其他几个术语中：
 - [异步组件](#async-component)
 - [动态组件](#dynamic-component)
 - [函数式组件](#functional-component)
@@ -97,7 +97,7 @@ Vue 对渲染自定义元素有内置的支持，并允许它们直接在 Vue �
 
 内置的指令包括 `v-if`、`v-for`、`v-bind`、`v-on` 和 `v-slot`。
 
-Vue 也支持创建自定义指令，尽管它们通常只用作操作 DOM 节点的“逃生舱”。自定义指令通常不能用来重新创建内置指令的功能。
+Vue 也支持创建自定义指令，尽管它们通常只用作操作 DOM 节点的"逃生舱"。自定义指令通常不能用来重新创建内置指令的功能。
 
 详见：
 - [指南 - 模板语法 - 指令](/guide/essentials/template-syntax.html#directives)
@@ -130,7 +130,7 @@ Vue 也支持创建自定义指令，尽管它们通常只用作操作 DOM 节�
 
 该名称来自于一个类似概念：原生 DOM API 中的 [`DocumentFragment`](https://developer.mozilla.org/zh-CN/docs/Web/API/DocumentFragment)。
 
-片段用于支持具有多个根节点的组件。虽然这样的组件表面上有多个根节点，但背后还是有一个单一的片段根节点作为这些表面上“根”节点的父节点。
+片段用于支持具有多个根节点的组件。虽然这样的组件表面上有多个根节点，但背后还是有一个单一的片段根节点作为这些表面上"根"节点的父节点。
 
 片段也作为包装多个动态节点的一种方式被用于模板编译器，例如通过 `v-for` 或 `v-if` 创建的节点。这允许我们向 [VDOM](#virtual-dom) 补丁算法传递额外的提示。这些大部分都是在内部处理的，但你可能会直接遇到的一种情况是在 `<template>` 标签上使用 `v-for` 的 `key`。在此，`key` 会作为 [prop](#prop) 添加到片段的 VNode。
 
@@ -149,11 +149,11 @@ Vue 也支持创建自定义指令，尽管它们通常只用作操作 DOM 节�
 
 ## 变量提升 (hoisting) {#hoisting}
 
-*变量提升*一词用于描述在一段代码到达之前就运行。执行被“提升”到一个较早的点。
+*变量提升*一词用于描述在一段代码到达之前就运行。执行被"提升"到一个较早的点。
 
 JavaScript 对某些结构使用了变量提升，例如 `var`、`import` 和函数声明。
 
-在 Vue 上下文中，模板编译器应用了*变量提升*来提高性能。在将模板转换为渲染函数时，一些静态内容会被提升到组件作用域之外。这些静态内容被描述为“被提升的”，因为它们是在组件创建之前，在其外面创建的。
+在 Vue 上下文中，模板编译器应用了*变量提升*来提高性能。在将模板转换为渲染函数时，一些静态内容会被提升到组件作用域之外。这些静态内容被描述为"被提升的"，因为它们是在组件创建之前，在其外面创建的。
 
 ## 缓存静态内容 (cache-static) {#cache-static}
 
@@ -173,9 +173,9 @@ Vue 的模板编译器会识别静态 VNodes，在首次渲染时会将其缓存
 通常来说，内联 DOM 模板是直接在页面的 HTML 中编写的 HTML 标记。然后浏览器将其解析为 DOM 节点，Vue 再使用这些节点来读取 `innerHTML`。
 
 详见：
-- [指南 - 创建一个应用 - DOM 中的根组件模板](/guide/essentials/application.html#in-dom-root-component-template)
-- [指南 - 组件基础 - DOM 内模板解析注意事项](/guide/essentials/component-basics.html#in-dom-template-parsing-caveats)
-- [渲染选项 - template](/api/options-rendering.html#template)
+- [指南 - 创建一个应用 - DOM 中的根组件模板](/guide/essentials/application#in-dom-root-component-template)
+- [指南 - 组件基础 - DOM 内模板解析注意事项](/guide/essentials/component-basics#in-dom-template-parsing-caveats)
+- [渲染选项 - template](/api/options-rendering#template)
 
 ## 注入 (inject) {#inject}
 
@@ -213,7 +213,7 @@ Vue 组件是通过对象定义的。这些组件对象的属性被称为*选项
 
 某些选项，例如 `props`、`emits` 和 `inheritAttrs`，可以用于任意一套 API 编写组件。由于它们是组件选项，因此可以被认为是选项式 API 的一部分。但是，由于这些选项也与 `setup()` 结合使用，因此通常更适合将它们视为两套组件风格之间共享的选项。
 
-`setup()` 函数本身是一个组件选项，因此它*可以*被描述为选项式 API 的一部分。但是，这不是“选项式 API”这个术语的常见用法。相反，`setup()` 函数被认为是组合式 API 的一部分。
+`setup()` 函数本身是一个组件选项，因此它*可以*被描述为选项式 API 的一部分。但是，这不是"选项式 API"这个术语的常见用法。相反，`setup()` 函数被认为是组合式 API 的一部分。
 
 ## 插件 (plugin) {#plugin}
 
@@ -266,9 +266,9 @@ Vue 组件是通过对象定义的。这些组件对象的属性被称为*选项
 
 `watchEffect()` 是最直接的创建作用的方式。Vue 内部的其他各个部分也会使用作用。例如：组件渲染更新、`computed()` 和 `watch()`。
 
-Vue 只能在响应式作用内部跟踪响应式依赖关系。如果在响应式作用之外读取属性的值，它将“丢失”响应性，因为 Vue 不知道在该属性发生变化后应该做什么。
+Vue 只能在响应式作用内部跟踪响应式依赖关系。如果在响应式作用之外读取属性的值，它将"丢失"响应性，因为 Vue 不知道在该属性发生变化后应该做什么。
 
-这个术语源自“副作用”。调用作用函数是属性值被更改的副作用。
+这个术语源自"副作用"。调用作用函数是属性值被更改的副作用。
 
 详见：
 - [指南 - 深入响应式系统](/guide/extras/reactivity-in-depth.html)
@@ -337,7 +337,7 @@ Ref 有多种不同的类型。例如，可以使用 `ref()`、`shallowRef()`、
 
 在 Vue 3 中，插槽 API 被简化为使所有插槽都像作用域插槽一样。然而，作用域插槽和非作用域插槽的使用场景通常不一样，因此该术语仍被用于特指具有 prop 的插槽。
 
-传递给插槽的 prop 只能在父模板中负责定义该插槽内容的指定区域中使用。该模板区域的行为类似于 prop 的变量作用域，因此称为“作用域插槽”。
+传递给插槽的 prop 只能在父模板中负责定义该插槽内容的指定区域中使用。该模板区域的行为类似于 prop 的变量作用域，因此称为"作用域插槽"。
 
 详见：
 - [指南 - 插槽 - 作用域插槽](/guide/components/slots.html#scoped-slots)
