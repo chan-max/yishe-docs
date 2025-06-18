@@ -146,6 +146,10 @@ export const sidebar: ThemeConfig['sidebar'] = {
         {
           text: '快速上手',
           link: '/guide/quick-start'
+        },
+        {
+          text: '常用链接',
+          link: '/guide/common-links'
         }
       ]
     },
