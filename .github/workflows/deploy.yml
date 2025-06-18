@@ -40,7 +40,7 @@ jobs:
 
           source: ".vitepress/dist/**"
           target: "/www/wwwroot/49.232.186.238_1523"
-          rm: true
+          rm: false
           strip_components: 2
           overwrite: true
           command_timeout: "10m"
