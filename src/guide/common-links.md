@@ -30,8 +30,21 @@ footer: false
 - **说明**：衣设平台文档地址
 
 ### 客户端下载
-- **地址**：[http://49.232.186.238:1525](http://49.232.186.238:1525)
-- **说明**：衣设客户端下载地址
+- **GitHub 官方发布**：[https://github.com/chan-max/yishe-client/releases/latest](https://github.com/chan-max/yishe-client/releases/latest)
+- **说明**：衣设客户端官方 GitHub 发布页面，获取最新版本
+- **固定下载链接**：
+  - 最新版本页面：`https://github.com/chan-max/yishe-client/releases/latest`
+  - 最新版本下载目录：`https://github.com/chan-max/yishe-client/releases/download/latest/`
+  - 特定文件下载（示例）：
+    - Windows: `https://github.com/chan-max/yishe-client/releases/latest/download/yishe-client.exe`
+    - macOS: `https://github.com/chan-max/yishe-client/releases/latest/download/yishe-client.dmg`
+    - Linux: `https://github.com/chan-max/yishe-client/releases/latest/download/yishe-client.AppImage`
+- **备选下载地址**：[http://49.232.186.238:1525](http://49.232.186.238:1525)
+- **说明**：衣设客户端内部下载地址
+
+:::tip 固定链接说明
+GitHub Release 的 `/latest` 链接是固定不变的，会自动指向最新版本，无需随版本号更新。
+:::
 
 ## 云服务器
 
