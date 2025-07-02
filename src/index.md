@@ -1,6 +1,6 @@
 ---
 page: true
-title: Vue.js - 渐进式 JavaScript 框架
+title: 1s - 最具创意的服装社区
 ---
 
 <script setup>

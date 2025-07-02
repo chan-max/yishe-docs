@@ -15,17 +15,17 @@ onMounted(load)
   <section id="hero">
     <img id="uwu" alt="Vue.js Kawaii Logo by @icarusgkx" />
     <h1 class="tagline">
-      <span class="accent">渐进式</span>
-      <br />JavaScript 框架
+      <span class="accent">打造最具创意的开放式的</span>
+      <br />服装社区
     </h1>
     <p class="description">
-      易学易用，性能出色，适用场景丰富的 Web 前端框架。
+      商品有价，创意无价
     </p>
     <p class="actions">
       <!-- NOTE: hide the home video -->
       <!-- <VueMasteryModal /> -->
-      <a class="get-started" href="/guide/introduction.html">
-        快速上手
+      <a class="online-shop" href="/guide/introduction.html">
+        线上商城
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -55,29 +55,7 @@ onMounted(load)
   </section>
 
   <section v-if="data && data.platinum_china" id="special-sponsor">
-    <h3>中国区铂金赞助</h3>
-    <div id="special-sponsor-container">
-      <template v-for="{ url, img, name, height, description } of data.platinum_china"
-      >
-        <a class="logo" :href="url" target="_blank" rel="sponsored noopener">
-          <picture v-if="img.endsWith('png')">
-            <source
-              type="image/avif"
-              :srcset="`${base}/images/${img.replace(/\.png$/,'.avif')}`"
-            />
-            <img :src="`${base}/images/${img}`" :alt="name" :style="{ height: height || '50px' }" />
-          </picture>
-          <img
-            width="168"
-            height="42"
-            v-else
-            :src="`${base}/images/${img}`"
-            :alt="name"
-          />
-        </a>
-        <span>{{ description }}</span>
-      </template>
-    </div>
+
   </section>
   <section v-else id="special-spsr">
     <span>
@@ -139,7 +117,7 @@ section {
 
 html:not(.dark) .accent,
 .dark .tagline {
-  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  background: -webkit-linear-gradient(315deg, #6900ff 25%, #999);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -166,18 +144,18 @@ html:not(.dark) .accent,
 
 .actions .security {
   background: linear-gradient(var(--vt-c-bg-mute), var(--vt-c-bg-mute)) padding-box,
-    linear-gradient(45deg, #42d392, #647eff) border-box;
+    linear-gradient(45deg, #6900ff, #647eff) border-box;
   border: 2px solid transparent;
 }
 
 .actions .security:hover {
   background: linear-gradient(var(--vt-c-gray-light-4), var(--vt-c-gray-light-4)) padding-box,
-    linear-gradient(45deg, #42d392, #647eff) border-box;
+    linear-gradient(45deg, #6900ff, #647eff) border-box;
 }
 
 .dark .actions .security:hover {
   background: linear-gradient(var(--vt-c-gray-dark-3), var(--vt-c-gray-dark-3)) padding-box,
-    linear-gradient(45deg, #42d392, #647eff) border-box;
+    linear-gradient(45deg, #6900ff, #647eff) border-box;
 }
 
 .actions .security .icon {
@@ -427,6 +405,15 @@ html:not(.dark) .accent,
 @media (max-width: 576px) {
   .uwu #uwu {
     margin: -60px auto -10px;
+  }
+}
+
+.online-shop{
+  margin-right: 12px;
+  background-color: #6900ff!important;
+
+  &:hover{
+    background-color: #9900ff!important
   }
 }
 </style>

@@ -9,6 +9,25 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav: ThemeConfig['nav'] = [
   {
+    text: '线上环境',
+    items: [
+      { text: '商城官网', link: 'https://1s.design' },
+      { text: 'API', link: 'https://1s.design:1520/api/hello' },
+      { text: '管理平台', link: 'http://49.232.186.238:1521' },
+      { text: '设计工具', link: 'http://49.232.186.238:1522' },
+      { text: '文档', link: 'http://49.232.186.238:1523' },
+      { text: '客户端(github)', link: 'https://github.com/chan-max/yishe-client/releases/latest' },
+      { text: '客户端下载', link: 'http://49.232.186.238:1525' }
+    ]
+  },
+  {
+    text: '开发环境',
+    items: [
+      { text: '开发官网', link: 'http://dev.1s.design' },
+      { text: '开发 API', link: 'http://dev.1s.design:1520/api' }
+    ]
+  },
+  {
     text: '文档',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
@@ -727,74 +746,22 @@ export default defineConfigWithTheme<ThemeConfig>({
         isTranslationsDesc: true
       }
     ],
-
-    algolia: {
-      indexName: 'vuejs_cn2',
-      appId: 'UURH1MHAF7',
-      apiKey: 'c23eb8e7895f42daeaf2bf6f63eb4bf6',
-      searchParameters: {
-        facetFilters: ['version:v3']
-      },
-      placeholder: '搜索文档',
-      translations: {
-        button: {
-          buttonText: '搜索'
-        },
-        modal: {
-          searchBox: {
-            resetButtonTitle: '清除查询条件',
-            resetButtonAriaLabel: '清除查询条件',
-            cancelButtonText: '取消',
-            cancelButtonAriaLabel: '取消'
-          },
-          startScreen: {
-            recentSearchesTitle: '搜索历史',
-            noRecentSearchesText: '没有搜索历史',
-            saveRecentSearchButtonTitle: '保存到搜索历史',
-            removeRecentSearchButtonTitle: '从搜索历史中移除',
-            favoriteSearchesTitle: '收藏',
-            removeFavoriteSearchButtonTitle: '从收藏中移除'
-          },
-          errorScreen: {
-            titleText: '无法获取结果',
-            helpText: '你可能需要检查你的网络连接'
-          },
-          footer: {
-            selectText: '选择',
-            navigateText: '切换',
-            closeText: '关闭',
-            searchByText: '搜索供应商'
-          },
-          noResultsScreen: {
-            noResultsText: '无法找到相关结果',
-            suggestedQueryText: '你可以尝试查询',
-            reportMissingResultsText: '你认为这个查询应该有结果？',
-            reportMissingResultsLinkText: '向我们反馈'
-          }
-        }
-      }
-    },
-
     // carbonAds: {
     //   code: 'CEBDT27Y',
     //   placement: 'vuejsorg'
     // },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/' },
+      { icon: 'github', link: 'https://github.com/chan-max' },
       { icon: 'twitter', link: 'https://twitter.com/vuejs' },
       { icon: 'discord', link: 'https://discord.com/invite/vue' }
     ],
 
-    editLink: {
-      repo: 'vuejs-translations/docs-zh-cn',
-      text: '在 GitHub 上编辑此页'
-    },
 
     footer: {
       license: {
-        text: '版权声明',
-        link: 'https://github.com/vuejs-translations/docs-zh-cn#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E'
+        text: '1s 衣设文档',
+        link: ''
       },
       copyright:
         '本中文文档采用 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议  (CC BY-NC-SA 4.0) 进行许可。'
@@ -849,14 +816,6 @@ export default defineConfigWithTheme<ThemeConfig>({
           'sponsor/**/*',
           'index.md'
         ],
-        customLLMsTxtTemplate: `\
-# Vue.js
-
-Vue.js - The Progressive JavaScript Framework
-
-## Table of Contents
-
-{toc}`
       }) as Plugin
     ]
   }
