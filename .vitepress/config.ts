@@ -674,97 +674,18 @@ export default defineConfigWithTheme<ThemeConfig>({
     sidebar,
     i18n,
 
-    localeLinks: [
-      {
-        link: 'https://vuejs.org',
-        text: 'English',
-        repo: 'https://github.com/vuejs/docs'
-      },
-      {
-        link: 'https://ja.vuejs.org',
-        text: '日本語',
-        repo: 'https://github.com/vuejs-translations/docs-ja'
-      },
-      {
-        link: 'https://ua.vuejs.org',
-        text: 'Українська',
-        repo: 'https://github.com/vuejs-translations/docs-uk'
-      },
-      {
-        link: 'https://fr.vuejs.org',
-        text: 'Français',
-        repo: 'https://github.com/vuejs-translations/docs-fr'
-      },
-      {
-        link: 'https://ko.vuejs.org',
-        text: '한국어',
-        repo: 'https://github.com/vuejs-translations/docs-ko'
-      },
-      {
-        link: 'https://pt.vuejs.org',
-        text: 'Português',
-        repo: 'https://github.com/vuejs-translations/docs-pt'
-      },
-      {
-        link: 'https://bn.vuejs.org',
-        text: 'বাংলা',
-        repo: 'https://github.com/vuejs-translations/docs-bn'
-      },
-      {
-        link: 'https://it.vuejs.org',
-        text: 'Italiano',
-        repo: 'https://github.com/vuejs-translations/docs-it'
-      },
-      {
-        link: 'https://fa.vuejs.org',
-        text: 'فارسی',
-        repo: 'https://github.com/vuejs-translations/docs-fa'
-      },
-      {
-        link: 'https://ru.vuejs.org',
-        text: 'Русский',
-        repo: 'https://github.com/vuejs-translations/docs-ru'
-      },
-      {
-        link: 'https://cs.vuejs.org',
-        text: 'Čeština',
-        repo: 'https://github.com/vuejs-translations/docs-cs'
-      },
-      {
-        link: 'https://zh-hk.vuejs.org',
-        text: '繁體中文',
-        repo: 'https://github.com/vuejs-translations/docs-zh-hk'
-      },
-      {
-        link: 'https://pl.vuejs.org',
-        text: 'Polski',
-        repo: 'https://github.com/vuejs-translations/docs-pl',
-      },
-      {
-        link: '/translations/',
-        text: '帮助我们翻译！',
-        isTranslationsDesc: true
-      }
-    ],
-    // carbonAds: {
-    //   code: 'CEBDT27Y',
-    //   placement: 'vuejsorg'
-    // },
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/chan-max' },
-      { icon: 'twitter', link: 'https://twitter.com/vuejs' },
-      { icon: 'discord', link: 'https://discord.com/invite/vue' }
     ],
 
 
     footer: {
       license: {
-        text: '1s 衣设文档',
+        text: '衣设开发文档',
         link: ''
       },
       copyright:
-        '本中文文档采用 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议  (CC BY-NC-SA 4.0) 进行许可。'
+        ' Presented by Jackie Chan (chen zheng)  - creator of  1s '
     }
   },
 

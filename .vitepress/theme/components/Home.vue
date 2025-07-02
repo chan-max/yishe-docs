@@ -24,8 +24,8 @@ onMounted(load)
     <p class="actions">
       <!-- NOTE: hide the home video -->
       <!-- <VueMasteryModal /> -->
-      <a class="online-shop" href="/guide/introduction.html">
-        线上商城
+      <a class="howtouse" href="/guide/introduction.html">
+        使用教程
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ onMounted(load)
       </a>
       <a class="setup" href="/guide/quick-start.html">安装</a>
       <a class="security" href="https://v2.cn.vuejs.org/eol/" target="_blank">
-        获取针对 Vue 2 的安全更新
+        访问线上商城
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -408,7 +408,7 @@ html:not(.dark) .accent,
   }
 }
 
-.online-shop{
+.howtouse{
   margin-right: 12px;
   background-color: #6900ff!important;
 
