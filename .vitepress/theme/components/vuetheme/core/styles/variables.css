@@ -49,11 +49,11 @@
   --vt-c-text-dark-4: rgba(235, 235, 235, 0.18);
   --vt-c-text-dark-code: var(--vt-c-indigo-light);
 
-  --vt-c-green: #42b883;
-  --vt-c-green-light: #6900ff;
-  --vt-c-green-lighter: #35eb9a;
-  --vt-c-green-dark: #33a06f;
-  --vt-c-green-darker: #155f3e;
+  --vt-c-green: #6900ff;
+  --vt-c-green-light: #8f33ff;
+  --vt-c-green-lighter: #b266ff;
+  --vt-c-green-dark: #4b0099;
+  --vt-c-green-darker: #2e004d;
 
   --vt-c-blue: #3b8eed;
   --vt-c-blue-light: #549ced;

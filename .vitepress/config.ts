@@ -3,7 +3,8 @@ import path from 'path'
 import { defineConfigWithTheme, type HeadConfig, type Plugin } from 'vitepress'
 import type { Config as ThemeConfig } from '@vue/theme'
 import llmstxt from 'vitepress-plugin-llms'
-import baseConfig from '@vue/theme/config'
+
+
 import { headerPlugin } from './headerMdPlugin'
 // import { textAdPlugin } from './textAdMdPlugin'
 
@@ -632,7 +633,9 @@ function inlineScript(file: string): HeadConfig {
 }
 
 export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
+  extends: {
+    
+  },
 
   sitemap: {
     hostname: 'https://cn.vuejs.org'
