@@ -15,7 +15,7 @@ onMounted(load)
   <section id="hero">
     <img id="uwu" alt="Vue.js Kawaii Logo by @icarusgkx" />
     <h1 class="tagline">
-      <span class="accent">打造最具创意的开放式的</span>
+      <span class="accent">打造最具创意的开放式</span>
       <br />服装社区
     </h1>
     <p class="description">
@@ -411,6 +411,7 @@ html:not(.dark) .accent,
 .howtouse{
   margin-right: 12px;
   background-color: #6900ff!important;
+  color: #fff!important;
 
   &:hover{
     background-color: #9900ff!important
