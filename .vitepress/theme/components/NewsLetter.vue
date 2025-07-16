@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import { VTLink } from '.vitepress/theme/components/vuetheme'
+// import { VTLink } from '@theme/components/vuetheme'
 </script>
 
 <template>

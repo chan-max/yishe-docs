@@ -11,7 +11,7 @@ import { computed } from 'vue'
 //   VTIconMapPin,
 //   VTIconX,
 //   VTLink
-// } from '.vitepress/theme/components/vuetheme'
+// } from '@theme/components/vuetheme'
 import type { Member } from './Member'
 
 const props = defineProps<{

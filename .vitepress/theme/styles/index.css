@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 @import "./zh-cn.css";
 @import "./pages.css";
 @import "./badges.css";

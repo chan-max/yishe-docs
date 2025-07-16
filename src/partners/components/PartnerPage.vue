@@ -4,7 +4,7 @@ import data from '../partners.json'
 import { Partner } from './type'
 import { normalizeName, track } from './utils'
 import PartnerCard from './PartnerCard.vue'
-// import { VTIconChevronLeft } from '.vitepress/theme/components/vuetheme'
+// import { VTIconChevronLeft } from '@theme/components/vuetheme'
 
 
 const props = defineProps<{

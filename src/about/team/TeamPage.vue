@@ -21,7 +21,7 @@ const shuffleMembers = (
 </script>
 
 <script setup lang="ts">
-// import { VTLink } from '.vitepress/theme/components/vuetheme'
+// import { VTLink } from '@theme/components/vuetheme'
 import membersCoreData from './members-core.json'
 import membersEmeritiData from './members-emeriti.json'
 import membersPartnerData from './members-partner.json'

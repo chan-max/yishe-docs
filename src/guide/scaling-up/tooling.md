@@ -1,5 +1,5 @@
 <script setup>
-// import { VTCodeGroup, VTCodeGroupTab } from '.vitepress/theme/components/vuetheme'
+// import { VTCodeGroup, VTCodeGroupTab } from '@theme/components/vuetheme'
 </script>
 
 # 工具链 {#tooling}
