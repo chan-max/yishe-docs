@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import {
-  VTIconCode,
-  VTIconCodePen,
-  VTIconGitHub,
-  VTIconGlobe,
-  VTIconHeart,
-  VTIconLink,
-  VTIconLinkedIn,
-  VTIconMapPin,
-  VTIconX,
-  VTLink
-} from '.vitepress/theme/components/vuetheme'
+// import {
+//   VTIconCode,
+//   VTIconCodePen,
+//   VTIconGitHub,
+//   VTIconGlobe,
+//   VTIconHeart,
+//   VTIconLink,
+//   VTIconLinkedIn,
+//   VTIconMapPin,
+//   VTIconX,
+//   VTLink
+// } from '.vitepress/theme/components/vuetheme'
 import type { Member } from './Member'
 
 const props = defineProps<{

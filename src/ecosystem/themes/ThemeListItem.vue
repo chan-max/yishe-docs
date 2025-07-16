@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { VTLink } from '.vitepress/theme/components/vuetheme'
+// import { VTLink } from '.vitepress/theme/components/vuetheme'
 import ThemeProduct from './ThemeProduct.vue'
 
 const props = defineProps<{

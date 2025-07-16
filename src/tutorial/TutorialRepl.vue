@@ -10,12 +10,12 @@ import {
 } from '../examples/utils'
 import PreferenceSwitch from '@theme/components/PreferenceSwitch.vue'
 
-import {
-  VTFlyout,
-  VTIconChevronLeft,
-  VTIconChevronRight,
-  VTLink
-}  from '.vitepress/theme/components/vuetheme'
+// import {
+//   VTFlyout,
+//   VTIconChevronLeft,
+//   VTIconChevronRight,
+//   VTLink
+// }  from '.vitepress/theme/components/vuetheme'
 
 
 const { vueVersion, defaultVersion, importMap } = useVueImportMap({
