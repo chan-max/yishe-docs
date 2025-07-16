@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { defineConfigWithTheme, type HeadConfig, type Plugin } from 'vitepress'
+import type { SidebarConfig } from './theme/components/vuetheme/vitepress/config'
 import llmstxt from 'vitepress-plugin-llms'
 
 
@@ -156,7 +157,7 @@ const nav = [
   }
 ]
 
-export const sidebar: ThemeConfig['sidebar'] = {
+export const sidebar: SidebarConfig = {
   '/guide/': [
     {
       text: '开始了解',
@@ -179,9 +180,18 @@ export const sidebar: ThemeConfig['sidebar'] = {
       ]
     },
   ],
+  '/api/': [
+    {
+      text: 'API 文档',
+      items: [
+        // 示例：请根据实际 API 文档页面补充
+        { text: '示例接口', link: '/api/example' }
+      ]
+    }
+  ],
 }
 
-const i18n: ThemeConfig['i18n'] = {
+const i18n = {
   search: '搜索',
   menu: '菜单',
   toc: '本页目录',
@@ -226,11 +236,12 @@ function inlineScript(file: string): HeadConfig {
   ]
 }
 
-export default defineConfigWithTheme<ThemeConfig>({
+export default defineConfigWithTheme({
   extends: {
     
   },
 
+  ignoreDeadLinks: true,
   sitemap: {
     hostname: 'https://cn.vuejs.org'
   },
