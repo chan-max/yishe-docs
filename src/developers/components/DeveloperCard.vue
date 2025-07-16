@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { DeveloperProfile } from './type'
 import { truncateTextFromArray } from './utils'
-import { VTIconMapPin } from '@vue/theme'
+import { VTIconMapPin } from '.vitepress/theme/components/vuetheme'
 import DeveloperImage from './DeveloperImage.vue'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 import DeveloperCompensations from './DeveloperCompensations.vue'

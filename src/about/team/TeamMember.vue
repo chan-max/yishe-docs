@@ -11,7 +11,7 @@ import {
   VTIconMapPin,
   VTIconX,
   VTLink
-} from '@vue/theme'
+} from '.vitepress/theme/components/vuetheme'
 import type { Member } from './Member'
 
 const props = defineProps<{

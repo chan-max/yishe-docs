@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VTLink } from '@vue/theme'
+import { VTLink } from '.vitepress/theme/components/vuetheme'
 
 defineProps<{
   product: Record<string, any>

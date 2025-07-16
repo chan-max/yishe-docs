@@ -4,7 +4,7 @@ import PartnerHero from './PartnerHero.vue'
 import PartnerList from './PartnerList.vue'
 import PartnerJoin from './PartnerJoin.vue'
 import { Partner } from './type'
-import { VTIconSearch } from '@vue/theme'
+import { VTIconSearch } from '.vitepress/theme/components/vuetheme'
 
 const query = ref('')
 

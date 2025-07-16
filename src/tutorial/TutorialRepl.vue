@@ -9,12 +9,14 @@ import {
   onHashChange
 } from '../examples/utils'
 import PreferenceSwitch from '@theme/components/PreferenceSwitch.vue'
+
 import {
   VTFlyout,
   VTIconChevronLeft,
   VTIconChevronRight,
   VTLink
-} from '@vue/theme'
+}  from '.vitepress/theme/components/vuetheme'
+
 
 const { vueVersion, defaultVersion, importMap } = useVueImportMap({
   runtimeDev: () =>

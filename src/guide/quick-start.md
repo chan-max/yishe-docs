@@ -3,7 +3,7 @@ footer: false
 ---
 
 <script setup>
-import { VTCodeGroup, VTCodeGroupTab } from '@vue/theme'
+// import { VTCodeGroup, VTCodeGroupTab } from '.vitepress/theme/components/vuetheme'
 </script>
 
 # 快速上手
