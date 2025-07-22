@@ -10,7 +10,7 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav = [
   {
-    text: '线上环境',
+    text: '常用地址',
     items: [
       { text: '商城官网', link: 'https://1s.design' },
       { text: 'API', link: 'https://1s.design:1520/api/hello' },
@@ -18,12 +18,7 @@ const nav = [
       { text: '设计工具', link: 'http://49.232.186.238:1522' },
       { text: '文档', link: 'http://49.232.186.238:1523' },
       { text: '客户端(github)', link: 'https://github.com/chan-max/yishe-client/releases/latest' },
-      { text: '客户端下载', link: 'http://49.232.186.238:1525' }
-    ]
-  },
-  {
-    text: '开发环境',
-    items: [
+      { text: '客户端下载', link: 'http://49.232.186.238:1525' },
       { text: '开发官网', link: 'http://dev.1s.design' },
       { text: '开发 API', link: 'http://dev.1s.design:1520/api' }
     ]
@@ -180,15 +175,6 @@ export const sidebar: SidebarConfig = {
       ]
     },
   ],
-  '/api/': [
-    {
-      text: 'API 文档',
-      items: [
-        // 示例：请根据实际 API 文档页面补充
-        { text: '示例接口', link: '/api/example' }
-      ]
-    }
-  ],
 }
 
 const i18n = {
@@ -254,7 +240,7 @@ export default defineConfigWithTheme({
   // outDir: 'dist',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }],
     ['meta', { property: 'og:url', content: 'https://cn.vuejs.org/' }],

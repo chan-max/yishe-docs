@@ -1,5 +1,5 @@
 ---
-footer: false
+outline: deep
 ---
 
 # 常用链接

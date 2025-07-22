@@ -167,6 +167,7 @@ html:not(.dark) .accent,
 .actions .get-started,
 .actions .setup {
   margin-right: 18px;
+  margin-left: 18px;
 }
 
 .actions .icon {
@@ -409,7 +410,6 @@ html:not(.dark) .accent,
 }
 
 .howtouse{
-  margin-right: 12px;
   background-color: #6900ff!important;
   color: #fff!important;
 

@@ -14,6 +14,7 @@ export interface MenuItemWithLinkAndChildren extends MenuItemWithLink {
 
 export function useOutlineHeaders() {
   const { page } = useData()
+
   const filterHeaders = inject('filter-headers', null) as any
   return computed(() => {
     return resolveHeaders(page.value.headers, filterHeaders)
