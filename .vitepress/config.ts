@@ -286,6 +286,7 @@ export default defineConfigWithTheme({
   markdown: {
     theme: 'github-dark',
     config(md) {
+      console.log('run')
       md.use(headerPlugin)
       // .use(textAdPlugin)
     }
