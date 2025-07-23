@@ -45,6 +45,15 @@ const nav = [
     ]
   },
   {
+    text: '关于我们',
+    items: [
+      { text: '关于我们', link: '/about/' },
+      { text: '关于作者', link: '/about/author' },
+      { text: '联系我们', link: '/about/contact' },
+      { text: '社交媒体', link: '/about/social' }
+    ]
+  },
+  {
     text: 'API',
     activeMatch: `^/api/`,
     link: '/api/'
