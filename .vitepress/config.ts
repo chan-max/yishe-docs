@@ -181,6 +181,7 @@ export const sidebar: SidebarConfig = {
       text: '资源收集',
       items: [
         { text: '图片资源网站', link: '/guide/assets/common-image-sites' },
+        { text: '图片爬虫', link: '/guide/assets/image-crawler' },
       ]
     },
   ],
