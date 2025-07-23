@@ -3,7 +3,7 @@ import path from 'path'
 import { defineConfigWithTheme, type HeadConfig, type Plugin } from 'vitepress'
 import type { SidebarConfig } from './theme/components/vuetheme/vitepress/config'
 import llmstxt from 'vitepress-plugin-llms'
-
+import baseConfig from '@vue/theme/config'
 
 import { headerPlugin } from './headerMdPlugin'
 // import { textAdPlugin } from './textAdMdPlugin'
@@ -232,9 +232,8 @@ function inlineScript(file: string): HeadConfig {
 }
 
 export default defineConfigWithTheme({
-  extends: {
-    
-  },
+  
+  extends: baseConfig,
 
   ignoreDeadLinks: true,
   sitemap: {
@@ -288,14 +287,14 @@ export default defineConfigWithTheme({
         link: ''
       },
       copyright:
-        ' Presented by Jackie Chan (chen zheng)  - creator of  1s '
+        ' Presented by Jc (chen zheng)'
     }
   },
 
   markdown: {
     theme: 'github-dark',
     config(md) {
-      console.log('run')
+      // console.log(md)
       md.use(headerPlugin)
       // .use(textAdPlugin)
     }
