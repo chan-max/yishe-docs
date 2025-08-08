@@ -1,3 +1,11 @@
+<!--
+ * @Author: chan-max jackieontheway666@gmail.com
+ * @Date: 2025-07-20 07:56:18
+ * @LastEditors: chan-max jackieontheway666@gmail.com
+ * @LastEditTime: 2025-08-09 05:18:56
+ * @FilePath: /yishe-scripts/Users/jackie/workspace/yishe-docs/.vitepress/theme/components/SiteMap.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <script setup lang="ts">
 // import { VTLink } from '@theme/components/vuetheme'
 import { useData } from 'vitepress'
@@ -7,17 +15,17 @@ const nav = data.site.value.themeConfig.nav
 const ecosystem = nav.find((i: any) => i.activeMatch?.includes('ecosystem'))
 const items = nav
   .filter((i: any) => i !== ecosystem && i.items)
-  .concat(ecosystem.items)
+  .concat(ecosystem?.items)
 </script>
 
 <template>
   <section id="sitemap">
     <div class="container">
       <div class="sitemap-col" v-for="col in items">
-        <h4>{{ col.text }}</h4>
+        <h4>{{ col?.text }}</h4>
         <ul>
-          <li v-for="row in col.items">
-            <VTLink :href="row.link">{{ row.text }}</VTLink>
+          <li v-for="row in col?.items">
+            <VTLink :href="row.link">{{ row?.text }}</VTLink>
           </li>
         </ul>
       </div>

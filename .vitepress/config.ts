@@ -48,7 +48,6 @@ const nav = [
     text: '关于我们',
     items: [
       { text: '关于我们', link: '/about/' },
-      { text: '关于作者', link: '/about/author' },
       { text: '联系我们', link: '/about/contact' },
       { text: '社交媒体', link: '/about/social' }
     ]
@@ -57,75 +56,6 @@ const nav = [
     text: 'API',
     activeMatch: `^/api/`,
     link: '/api/'
-  },
-  {
-    text: '演练场',
-    link: 'https://play.vuejs.org'
-  },
-  {
-    text: '生态系统',
-    activeMatch: `^/ecosystem/`,
-    items: [
-      {
-        text: '资源',
-        items: [
-          { text: '合作伙伴', link: '/partners/' },
-          { text: '开发者', link: '/developers/' },
-          { text: '主题', link: '/ecosystem/themes' },
-          { text: 'UI 组件', link: 'https://ui-libs.vercel.app/' },
-          {
-            text: '证书',
-            link: 'https://certificates.dev/vuejs/?ref=vuejs-nav'
-          },
-          { text: '找工作', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: 'T-Shirt 商店', link: 'https://vue.threadless.com/' }
-        ]
-      },
-      {
-        text: '官方库',
-        items: [
-          { text: 'Vue Router', link: 'https://router.vuejs.org/zh/' },
-          { text: 'Pinia', link: 'https://pinia.vuejs.org/zh/' },
-          { text: '工具链指南', link: '/guide/scaling-up/tooling.html' }
-        ]
-      },
-      {
-        text: '视频课程',
-        items: [
-          {
-            text: 'Vue Mastery',
-            link: 'https://www.vuemastery.com/courses/'
-          },
-          {
-            text: 'Vue School',
-            link: 'https://vueschool.io/?friend=vuejs&utm_source=Vuejs.org&utm_medium=Link&utm_content=Navbar%20Dropdown'
-          }
-        ]
-      },
-      {
-        text: '帮助',
-        items: [
-          {
-            text: 'Discord 聊天室',
-            link: 'https://discord.com/invite/HBherRA'
-          },
-          {
-            text: 'GitHub 论坛',
-            link: 'https://github.com/vuejs/core/discussions'
-          },
-          { text: 'DEV Community', link: 'https://dev.to/t/vue' }
-        ]
-      },
-      {
-        text: '动态',
-        items: [
-          { text: '博客', link: 'https://blog.vuejs.org/' },
-          { text: 'Twitter', link: 'https://twitter.com/vuejs' },
-          { text: '活动', link: 'https://events.vuejs.org/' },
-          { text: '新闻简报', link: '/ecosystem/newsletters' }
-        ]
-      }
-    ]
   },
   {
     text: '关于',
@@ -146,19 +76,12 @@ const nav = [
       }
     ]
   },
+
+  
   {
-    text: '赞助',
-    link: '/sponsor/'
+    text: '关于作者',
+    link: '/author'
   },
-  {
-    text: '专家',
-    badge: { text: '新' },
-    activeMatch: `^/(partners|developers)/`,
-    items: [
-      { text: '合作伙伴', link: '/partners/' },
-      { text: '开发者', link: '/developers/', badge: { text: '新' } }
-    ]
-  }
 ]
 
 export const sidebar: SidebarConfig = {
