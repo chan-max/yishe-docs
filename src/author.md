@@ -85,19 +85,30 @@ aside: false
 ## 项目创始人
 
 <div class="author-section">
-  <img src="/me.png" alt="Chan Max 头像" class="author-avatar" />
+  <img src="/me.png" alt="Jackie Chan 头像" class="author-avatar" />
   <div class="author-details">
-    <h2>Chan Max</h2>
+    <h2>陈政 (Jackie Chan)</h2>
     <p>项目创始人 & 核心开发者</p>
     <div class="author-contact">
       <a href="https://github.com/chan-max" target="_blank">GitHub</a>
       <a href="mailto:jackieontheway666@gmail.com">邮箱</a>
       <span>18742539196</span>
+      <span>13224229196</span>
     </div>
   </div>
 </div>
 
-Chan Max 是衣设（Yishe）项目的创始人和核心开发者，拥有丰富的前端开发和产品设计经验。他致力于通过技术创新为时尚设计行业带来更好的数字化解决方案。
+陈政（Jackie Chan）是衣设（Yishe）项目的创始人和核心开发者，拥有丰富的前端开发和产品设计经验。他致力于通过技术创新为时尚设计行业带来更好的数字化解决方案。
+
+### 基本信息
+
+- **中文名**: 陈政
+- **英文名**: Jackie Chan
+- **生日**: 1999年1月12日
+- **工作地点**: 辽宁大连
+- **联系方式**:
+  - 电话: 18742539196 / 13224229196
+  - 邮箱: jackieontheway666@gmail.com / 1sdotdesign@gmail.com
 
 ### 技术背景
 
@@ -208,7 +219,8 @@ Chan Max 是衣设（Yishe）项目的创始人和核心开发者，拥有丰富
 
 - **项目主页**: [GitHub Repository](https://github.com/chan-max/yishe-client)
 - **问题反馈**: [GitHub Issues](https://github.com/chan-max/yishe-client/issues)
-- **邮箱联系**: jackieontheway666@gmail.com
+- **邮箱联系**: jackieontheway666@gmail.com / 1sdotdesign@gmail.com
+- **联系电话**: 18742539196 / 13224229196
 
 ### 商务合作
 

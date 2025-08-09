@@ -82,6 +82,10 @@ const nav = [
     text: '关于作者',
     link: '/author'
   },
+  {
+    text: '商业计划书',
+    link: '/business-plan'
+  },
 ]
 
 export const sidebar: SidebarConfig = {
