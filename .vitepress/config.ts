@@ -28,64 +28,24 @@ const nav = [
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
       { text: '深度指南', link: '/guide/introduction' },
-      { text: '互动教程', link: '/tutorial/' },
-      { text: '示例', link: '/examples/' },
       { text: '快速上手', link: '/guide/quick-start' },
-      // { text: '风格指南', link: '/style-guide/' },
-      { text: '术语表', link: '/glossary/' },
-      { text: '错误码参照表', link: '/error-reference/' },
+      { text: '常用链接', link: '/guide/common-links' },
       {
-        text: 'Vue 2 文档',
-        link: 'https://v2.cn.vuejs.org'
-      },
-      {
-        text: '从 Vue 2 迁移',
-        link: 'https://v3-migration.vuejs.org/'
+        text: '资源收集',
+        items: [
+          { text: '图片资源网站', link: '/guide/assets/common-image-sites' },
+          { text: '图片爬虫', link: '/guide/assets/image-crawler' }
+        ]
       }
     ]
   },
   {
     text: '关于我们',
     items: [
-      { text: '关于我们', link: '/about/' },
-      { text: '联系我们', link: '/about/contact' },
-      { text: '社交媒体', link: '/about/social' }
+      { text: '关于作者', link: '/author' },
+      { text: '商业计划书', link: '/business-plan' }
     ]
-  },
-  {
-    text: 'API',
-    activeMatch: `^/api/`,
-    link: '/api/'
-  },
-  {
-    text: '关于',
-    activeMatch: `^/about/`,
-    items: [
-      { text: '常见问题', link: '/about/faq' },
-      { text: '团队', link: '/about/team' },
-      { text: '版本发布', link: '/about/releases' },
-      {
-        text: '社区指南',
-        link: '/about/community-guide'
-      },
-      { text: '行为规范', link: '/about/coc' },
-      { text: '隐私政策', link: '/about/privacy' },
-      {
-        text: '纪录片',
-        link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
-      }
-    ]
-  },
-
-  
-  {
-    text: '关于作者',
-    link: '/author'
-  },
-  {
-    text: '商业计划书',
-    link: '/business-plan'
-  },
+  }
 ]
 
 export const sidebar: SidebarConfig = {
